@@ -1,25 +1,26 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(223, 223, 223);
-
+}
+*{
+    margin-top: 0.3px;
 }
 
 .banner{
     background-image: url(../imagens/bg-3.jpg);
     height: 500px;
-    background-position: center;
+    background-position: right center;
     background-size: cover;
-    margin: -40;
-    
 }
 .banner li{
     display: inline-block;
-    background-color: gray;
-    border-style:groove;
+    background-color: rgba(209, 209, 209, 0.425);
+    border-style:solid;
     margin-right: 1px;
     padding: 10px 10px 10px 10px;
     margin-top: 10px;
-    border-width: 4px;
+    border-width: 2px;
+    border-color: aliceblue;
     
 }
 
