@@ -6,46 +6,48 @@
     <meta name="description" content="Layouts">
     <meta name="keywords" content="css, html">
     <title>Layouts</title>
+    
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <div id="principal">
-        <header>
+        <header class="banner">
             <nav>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Quem sou eu?</a></li>
+                    <li><a href="index.html" style="text-decoration:none">Início</a></li>
+                    <li><a href="#" style="text-decoration:none">Contato</a></li>
+                    <li><a href="#" style="text-decoration:none">Quem sou eu?</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="banner-content">
                 <h1>Curso Web Fundamentos</h1>
                 <p>Aprenda HTML, CSS e Javascript</p>
             </div>
         </header>
 
         <main>
-            <section>
+            <section class="content-section">
                 <div class = "card">
-                    <img src="" alt="">
+                    <img src="imagens/card_02.jpg" alt="">
                     <p>Seletores</p>
                 </div>
 
                 <div class = "card">
-                    <img src="" alt="">
-                    <p>Seletores</p>
+                    <img src="imagens/card_04.jpg" alt="">
+                    <p>Posicionamento</p>
                 </div>
 
                 <div class = "card">
-                    <img src="" alt="">
-                    <p>Seletores</p>
+                    <img src="imagens/card_05.jpg" alt="">
+                    <p>Fonte e ícones</p>
                 </div>
 
             </section>
 
-            <section>
+            <section class="content-section">
                 <article>
                     <header>
-                        <h2>Titulo article/h2>
+                        <h2>Titulo article</h2>
                             <p>Paragrafo</p>
                             <p>Paragrafo</p>
                     </header>
@@ -53,8 +55,8 @@
             </section>
         </main>
 
-        <footer>
-            <p>Copyright &copy: 2023</p>
+        <footer class="rodape">
+            <p>Copyright &copy 2023</p>
         </footer>
     </div>
     
