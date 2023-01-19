@@ -17,7 +17,7 @@ body{
     border-style: solid;
     border-color: rgb(202, 202, 202);
     margin-right: 1px;
-    
+
     margin-top: 10px; 
 }
 
@@ -66,8 +66,9 @@ a:active{
     
 }
 
+
 main{
-    width: 55%;
+    width: 80%;
     margin: auto;
 }
 
@@ -75,22 +76,38 @@ main{
     background-color: white;
     padding: 10px;
     margin-top: 10px;
+    overflow: auto;
+    
+    
 }
 
-.content-section div p{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(216, 211, 211, 0.548);
-    text-shadow: 0px 0px 1px;
-    text-align: center;
-    font-size: 20px;
-    margin-top: -3.8px;
-    padding: 10px;
-}
 .card{
-    display: inline-block;
-    margin-left: 13px;
-    margin-right: 10px;
-    margin-top: 10px;
+    float: left;
+    box-sizing: border-box;
+    width: 32%;
+}
+
+.card1, .card2{
+    margin-right: 2%;
+
+}
+
+.card img{
+    width: 100%;
+    display: block;
+    
+}
+
+.card p{
+    background-color: rgba(0, 0, 0, 0.726);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 19px;
+   
 }
 
 .content-section article header h2{
@@ -100,9 +117,10 @@ main{
 }
 
 .rodape{
-    background-color: rgba(117, 117, 117, 0.144);
+    background-color: rgba(117, 117, 117, 0.726);
+    color: white;
     text-align: center;
     padding: 1%;
-    margin-top: 30px;
+    margin-top: 30px; 
 }
 
