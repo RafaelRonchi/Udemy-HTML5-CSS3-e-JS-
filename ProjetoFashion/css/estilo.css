@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+}
+
+.page-banner{
+    background-image: url(../imagens/topo.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+.page-logo {
+    margin-top: 10px;
+    margin-left: 10%;
+    position: absolute;
+}
+
+.page-banner li{
+    display: inline-block;
+    color: white;
+    margin-top: 18px;
+    position:relative;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.page-banner ul{
+    text-align: right;
+    color: white;
+    
+    background-color: rgba(0, 50, 116, 0.253);
+    padding-bottom: 16px;
+    padding-right: 50px;
+}
+a:hover{
+    background-color: 0;
+}
+a:link{
+    color:white;   
+}
+a:visited{
+    color:rgb(255, 255, 255);
+}
+a:active{
+    color:rgb(255, 255, 255);
+}
+
+.page-article1 h2{
+    margin-top: 10%;
+    text-align: center;
+}
+.page-article1 p{
+    margin-top: 5%;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.page-section{
+    overflow: auto;
+    
+}
+
+.card{
+    float: left;
+    box-sizing: border-box;
+    width: 30%;
+    margin-top: 7%;
+}
+
+.card p{
+    margin-left: 50px;
+    text-indent: 10px;
+}
+.h3-1, .h3-2{
+    margin-left: 65px;
+    text-indent: 10px;
+}
+.h3-3{
+    margin-left: 49px;
+    
+}
+
+.card1{
+    margin-left: 8.5%;
+}
+
+.card img{
+    width: 80%;
+    display: block;
+}
+
+.page-article2{
+    background-image: url(../imagens/bg_detalhe.png);
+        background-image: url(../imagens/bg_detalhe.png);
+        height: 370px;
+        width: 400px; 
+}
+
+
