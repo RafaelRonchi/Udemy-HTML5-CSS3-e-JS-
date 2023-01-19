@@ -13,9 +13,9 @@ body{
 }
 .banner li{
     display: inline-block;
-    background-color: rgba(165, 165, 165, 0.425);
+    background-color: rgba(150, 150, 150, 0.425);
     border-style: solid;
-    border-color: rgb(134, 134, 134);
+    border-color: rgb(202, 202, 202);
     margin-right: 1px;
     
     margin-top: 10px; 
