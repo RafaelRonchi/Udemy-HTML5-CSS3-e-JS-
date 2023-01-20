@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulario</title>
+    <style>
+        .formLogin{
+            width: 420px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .formLogin fieldset{
+            background-color: rgb(231, 231, 231);
+        }
+
+        .formLogin legend{
+            border-style: solid;
+            border-width: 2px;
+           background-color: rgb(231, 231, 231);
+        }
+
+        .formLogin label{
+           margin-top: 12px;
+           display: block;
+
+        }
+        #user, #pass, .button{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 2px;
+            font-size: 18px;
+        }
+
+        #user:focus, #pass:focus {
+            background-color: rgb(228, 228, 228);
+        }
+
+        .button{
+            margin-top: 10px;
+        }
+
+        #user{
+            margin-bottom: 15px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Formulario exemplo</h1>
+    <form action="#" method="post" class="formLogin" >
+        <fieldset>
+            <legend> <b> Login </b></legend>
+            <label for="user">Digite o usuario</label>
+            <input type="text" id="user" name="userName" autofocus>
+
+            <label for="pass">Digite a senha</label>
+            <input type="password" id="pass" name="userPass">
+
+            <input type="submit" value="acessar" class="button">
+        </fieldset>
+    </form>
+</body>
+</html>
