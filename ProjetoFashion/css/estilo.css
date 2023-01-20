@@ -1,18 +1,20 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
 }
 
 .page-banner{
     background-image: url(../imagens/topo.jpg);
-    height: 600px;
+    height: 800px;
     background-position: center;
     background-size: cover;
     position:relative;
 }
 
 .page-logo {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10%;
     position: absolute;
 }
@@ -31,71 +33,116 @@ body{
     color: white;
     
     background-color: rgba(0, 50, 116, 0.253);
-    padding-bottom: 16px;
+    padding: 26px;
+    padding-top: 10px;
     padding-right: 50px;
 }
-a:hover{
-    background-color: 0;
+
+.page-banner a:hover{
+    color: white;
 }
 a:link{
-    color:white;   
+    color:#425564;   
 }
 a:visited{
-    color:rgb(255, 255, 255);
+    color:#425564;
 }
 a:active{
     color:rgb(255, 255, 255);
 }
+.page-banner a{
+    transition: color .3s linear;
+    letter-spacing: 5px;
+}
 
 .page-article1 h2{
     margin-top: 10%;
-    text-align: center;
+    text-align:center;
+    font-size: 38px;
+    color: rgb(27, 27, 27);
+    
 }
 .page-article1 p{
     margin-top: 5%;
     text-indent: 20px;
-    text-align: justify;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 19px;
+    line-height: 2;
+    color: rgb(53, 53, 53);
 }
 
 .page-section{
+    color: rgb(49, 49, 49);
+    padding: 0 100px 50px 100px;
     overflow: auto;
-    
+
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.card{
+.gallery-card{
+    width: 33%;
     float: left;
-    box-sizing: border-box;
-    width: 30%;
-    margin-top: 7%;
-}
-
-.card p{
-    margin-left: 50px;
-    text-indent: 10px;
-}
-.h3-1, .h3-2{
-    margin-left: 65px;
-    text-indent: 10px;
-}
-.h3-3{
-    margin-left: 49px;
+    text-align: center;
+ 
     
+  
 }
 
-.card1{
-    margin-left: 8.5%;
+.gallery-title{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.card img{
-    width: 80%;
-    display: block;
-}
-
-.page-article2{
+.about{
+    background-color: #003d52;
+    padding: 100px;
+    color:white;
     background-image: url(../imagens/bg_detalhe.png);
-        background-image: url(../imagens/bg_detalhe.png);
-        height: 370px;
-        width: 400px; 
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+}
+
+.about p{
+    line-height: 1.5;
+    width: 70%;
+}
+
+.about h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#contact{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#contact address{
+    color: #003d52;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.rodape{
+    margin-top: 90px;
+    background-color:#003d52;
+    padding: 25px;
+    font-size: 12px;
+    color:aliceblue;
+    text-align: center;
+    letter-spacing: 5px;
 }
 
 
