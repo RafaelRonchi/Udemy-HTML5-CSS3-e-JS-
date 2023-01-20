@@ -105,6 +105,7 @@ a:active{
     background-image: url(../imagens/bg_detalhe.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    height: 500px;
 
 }
 
