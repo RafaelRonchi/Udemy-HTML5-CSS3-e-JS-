@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        li ol{
+            height: 0;
+            overflow: hidden;
+            transition: height .5s;
+        }
+
+        li:hover{
+            background-color: brown;
+        }
+
+        li:hover ol{
+            height: 50px;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 30%;
+            margin:auto;
+            background-color: slategray;
+        }
+        th{
+            background-color: blue;
+            border: 2px solid yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>I1</li>
+        <li>I2
+            <ol>
+                <li>I2.1</li>
+                <li>I2.2</li>
+            </ol>
+        </li>
+        <li>I3</li>
+    </ul>
+
+    <hr>
+
+    <dl>
+        <dt>Html</dt>
+        <dd>Linguagem de marcação</dd>
+
+        <dt>Css</dt>
+        <dd>Linguagem de folhas de estilos</dd>
+    </dl>
+    <hr>
+    <dl>
+        <dt>www</dt>
+        <dt>Net</dt>
+        <dd>Rede de computadores</dd>
+
+        <dt>JS</dt>
+        <dd>Linguagem script pra mnet</dd>
+        <dd>script para browser</dd>
+    </dl>
+<table>
+    <caption>Exemplo tabela</caption>
+    <thead>
+        <tr>
+            <th>Area</th>
+            <th>curso</th>
+            <th>Investimento</th>
+        </tr>
+    </thead>
+    <tfoot><tr>
+        <td colspan="3">Exemplot tfoot</td>
+    </tr>
+</tfoot>
+    <tbody>
+        <tr>
+            <td>Designe</td>
+            <td>Indesign</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td>Designe</td>
+            <td>fOTOS</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td>Designe</td>
+            <td>ILUSTRAÇÃO</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">rowspan 2</td>
+            <td>ILUSTRAÇÃO</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            
+            <td>ILUSTRAÇÃO</td>
+            <td>10000</td>
+        </tr>
+    </tbody>
+    
+</table>
+</body>
+</html>
