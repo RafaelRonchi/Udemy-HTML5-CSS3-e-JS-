@@ -1,0 +1,50 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(179, 179, 179);
+    font-weight: normal;
+    line-height: 2;
+}
+a{
+    transition: color .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+    background-image: url(../ProjetoStrataLayout/overlay.png), url(../ProjetoStrataLayout/bg.jpg);
+    background-position: left;
+    background-size: auto, cover;
+    text-align: right;
+}
+
+.main-header-title{
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgba(240, 248, 255, 0.795);
+    font-weight: normal;
+}
+.main-header-title strong{
+    color: rgba(240, 248, 255, 0.884);
+}
+
+.main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+}
+
+.main-header-link{
+    color: inherit;
+}
+
+.main-header-link:hover{
+    color: aquamarine;
+}
