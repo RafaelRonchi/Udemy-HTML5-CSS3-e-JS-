@@ -5,10 +5,109 @@ body{
     line-height: 2;
 }
 a{
-    transition: color .2s linear;
+    transition: color .2s linear, border .2 linear;
     text-decoration: none;
     border-bottom: 1px dotted;
+    color: #49bf9b;
 }
+p{
+    margin: 0 0 2em;
+}
+a:hover{
+    border-bottom-color: transparent;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0 ;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 15px;
+}
+sub, sup{
+    font-size: 12px;
+}
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: 0.5em 0 0.5em 1.5em;
+}
+code{
+    background-color: #f7f7f7;
+    border-radius: 0.35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: .25em .65em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #929292;
+}
+pre code{
+    display: block;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+
+}
+.ul-alternate{
+    list-style-type: none;
+}
+.ul-alternate li {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding-left: 0;
+}
+.ul-alternate li:last-child{
+    border: 0;
+}
+.ul-icons{
+    list-style-type: none;  
+}
+.ul-icons li {
+    display: inline-block;  
+    font-size: 1.6em;
+    padding: 10px;
+    color: #49bf9b;
+}
+
+.button-default{
+    background-color: #49bf9b;
+    border: 2px solid #49bf9b;
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+}
+.button-default-stroke{
+    background-color: white;
+    border-color: #efefef;
+    color: inherit;
+}
+.button-default-small{
+    font-size: .65em;
+}
+.button-default-full{
+   
+   display: block;
+   text-align: center; 
+}
+
 
 .main-header{
     position: fixed;
@@ -47,4 +146,11 @@ a{
 
 .main-header-link:hover{
     color: aquamarine;
+}
+.row{
+    overflow: auto;
+}  
+.col-2{
+    width: 50%;
+    float: left;
 }
