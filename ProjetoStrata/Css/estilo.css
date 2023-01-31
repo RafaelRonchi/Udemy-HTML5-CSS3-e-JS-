@@ -2,7 +2,14 @@ body{
     font-family: 'Poppins', sans-serif;
     color: rgb(179, 179, 179);
     font-weight: normal;
-    line-height: 2;
+    font-size: 23px;
+    line-height: 1.8;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #c7c7c7;
+    margin: 5em 0;
 }
 a{
     transition: color .2s linear, border .2 linear;
@@ -42,6 +49,10 @@ h6{
 sub, sup{
     font-size: 12px;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
 blockquote{
     border-left: 5px solid #efefef;
     margin: 2em 0;
@@ -64,6 +75,9 @@ ul, ol{
     padding: 0;
     list-style-position: inside;
 
+}
+.main-content-section h2{
+    font-size: 1.5em;
 }
 .ul-alternate{
     list-style-type: none;
@@ -110,6 +124,9 @@ input:focus,textarea:focus{
 ::placeholder{
     color: #979797;
     font-size: 1em;
+}
+.imagem-link{
+    border: 0;
 }
 .button-default{
     background-color: #49bf9b;
@@ -183,12 +200,17 @@ input:focus,textarea:focus{
     background-size: auto, cover;
     text-align: right;
 }
+.main-header img{
+    margin-right: 22px;
+    margin-top: 50px;
+}
 
 .main-header-title{
-    font-size: 22px;
+    margin-right: 22px;
     line-height: 1.5;
     color: rgba(240, 248, 255, 0.795);
     font-weight: normal;
+    font-size: 28px;
 }
 .main-header-title strong{
     color: rgba(240, 248, 255, 0.884);
@@ -207,6 +229,28 @@ input:focus,textarea:focus{
 
 .main-header-link:hover{
     color: aquamarine;
+}
+.main-header-link img{
+    border-radius: 100%;
+    overflow: hidden;
+
+}
+.recent-works-card img{
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.actions a:hover{
+    border-color: #49bf9b;
+}
+
+.img-left{
+    float: left;
+    margin-right: 20px;
+}
+.img-right{
+    float: right;
+    margin-left: 20px;
 }
 .row{
     overflow: auto;
