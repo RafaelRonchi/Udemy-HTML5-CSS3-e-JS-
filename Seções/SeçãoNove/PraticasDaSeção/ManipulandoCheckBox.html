@@ -9,12 +9,15 @@
             }
             
             a[target="_blank"]:after{
-                content: url(imagens/newWindow.png);
                 display: inline-block;
                 margin-left: 5px;                    
             }
+
+            a[target="_blank"]:after img{
+                height: 2px;                  
+            }
+            
             a[href$='.pdf']:before{
-                content: url(imagens/pdf-icon.gif);
                 display: inline-block;
                 margin-right: 5px;
             }
