@@ -41,10 +41,13 @@
                 width: 1px;
                 height:1px;
                 overflow: hidden;
-                visibility: hidden;
+                opacity: 0;
                 display: inline-block;
                 margin: 0;
-            }
+        }
+        label input:focus + span{
+            box-shadow: 0 0 0 2px black;
+        }
     </style>
 </head>
 <body>
