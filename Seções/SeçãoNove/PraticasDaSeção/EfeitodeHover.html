@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a{
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+        }
+        a img{
+            max-width: 100%;
+        }
+        a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            transition: all .5s;
+            text-decoration: none;
+        }
+        a:hover:before{
+            background: rgba(0, 0, 0, 0.459);
+        }
+        
+        a:hover:after{
+            content: 'Veja';
+            display: inline-block;
+            position: absolute;
+            border: 1px solid white;
+            color: aliceblue;
+            top: 50%;
+            left: 50%;
+            padding: 10px 20px;
+            transform: translate(-50%, -50%);
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Efeito Hover thumbs</h1>
+    <section>
+        <article>
+          <a href="#">
+            <img src="/ProjetoStrata/ProjetoStrataLayout/thumbs/01.jpg" alt="">
+          </a> 
+          <a href="#">
+            <img src="/ProjetoStrata/ProjetoStrataLayout/thumbs/02.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="/ProjetoStrata/ProjetoStrataLayout/thumbs/03.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="/ProjetoStrata/ProjetoStrataLayout/thumbs/04.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="/ProjetoStrata/ProjetoStrataLayout/thumbs/05.jpg" alt="">
+          </a> 
+          <a href="#">
+            <img src="/ProjetoStrata/ProjetoStrataLayout/thumbs/06.jpg" alt="">
+          </a> 
+        </article>
+
+    </section>    
+</body>
+</html>
