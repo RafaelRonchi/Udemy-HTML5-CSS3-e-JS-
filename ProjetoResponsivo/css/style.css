@@ -7,6 +7,11 @@ html{
 h1, h2, h3, h4, h5, h6{
     font-family: "Oxygen";
 }
+.clearfix::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
 .button{
     display: inline-block;
     padding: .9em 2.5em;
@@ -127,4 +132,41 @@ h1, h2, h3, h4, h5, h6{
     font-size: 1.6em;
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width: 48.75em){
+    .top-header-logo{
+        float: left;
+    }
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 10px;
+        font-weight: bold
+    }
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: #612674;
+        transition: all .5s;
+        
+    }
+    .top-nav a:hover{
+        background: #e7d9fd;
+        border-radius: 10%;
+        transition: all .5s;
+    }
+
+    .top-content{
+        background: #521a66;
+        color: white;
+    }
+    .top-content-title, .top-content-subtitle{
+        color: white;
+    }
 }
