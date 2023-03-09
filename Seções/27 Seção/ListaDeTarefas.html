@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">      
+         
+         <style>
+             .done{
+                 text-decoration: line-through;
+                 color: #555;
+             }
+             /*Fix my to-do list*/
+                .container{
+                    width: 500px;
+                    margin: 0 auto;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                }
+                ul li{
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    margin-bottom: 5px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    border-radius: 5px;
+                }
+                input{
+                    width: 60%;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    margin-bottom: 5px;
+                    border-radius: 40px;
+                    margin-bottom: 30px;
+                }
+                button{
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    margin-bottom: 5px;
+                    margin-left: 10%;
+                    border-radius: 40px;
+                }
+                h1{
+                    text-align: center;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                }
+                
+
+        </style>
+          
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Curso Javascript Completo 2018</h1>     
+            
+            <input type="text" id="txtTask">
+            <button id="btn">Cadastrar tarefa</button>       
+            
+            <ul>
+                <li>estudar Javascript - DOM</li>
+                <li>estudar eventos em Javascript</li>
+                <li>jogar video-game</li>
+            </ul>
+
+        </div>
+        
+        <script>
+            
+(function(){
+    'use strict';
+    
+    var $ul = document.querySelector('ul');
+    var $lis = $ul.querySelectorAll('li');
+    var $txtTask = document.querySelector('#txtTask');
+    var $btn = document.querySelector('#btn');
+    
+    $btn.addEventListener('click', addTask);
+    $txtTask.addEventListener('keyup', function(e){
+        if(e.keyCode === 13) {
+            addTask();
+        }
+    });
+    
+    $ul.addEventListener('click', function (e){
+        if(e.target.nodeName === 'LI'){           
+            removeTask(e.target);            
+        }
+    })
+    
+    function removeTask(li){
+        if(confirm('deseja realmente excluir a tarefa \n'+ li.textContent +'?')){
+            console.log(li.parentNode);
+            li.parentNode.removeChild(li);
+        }
+    }
+    
+    
+    function addTask(){        
+        var li = document.createElement('li');
+        var text = document.createTextNode($txtTask.value);        
+        li.appendChild(text);        
+        $ul.appendChild(li);        
+        $txtTask.value = '';
+        $txtTask.focus();
+    }
+        
+})()
+            
+        </script>
+        
+    </body>
+</html>
