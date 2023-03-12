@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>a</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur suscipit id ipsa, nisi consectetur beatae tempore reprehenderit eos, tenetur repudiandae quibusdam rem maxime. Sunt modi aut esse impedit sed.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio laboriosam vel perferendis, repellat saepe consequuntur officiis nam nisi iure reprehenderit. Voluptates earum obcaecati quo ducimus, consequatur repellat omnis iure!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas provident eaque reiciendis dignissimos. Sapiente expedita aspernatur praesentium iure, eaque tempora magnam, ipsum eos dolorum beatae quam dicta ad error doloribus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas provident eaque reiciendis dignissimos. Sapiente expedita aspernatur praesentium iure, eaque tempora magnam, ipsum eos dolorum beatae quam dicta ad error doloribus!</p>
+    
+    
+    <script>
+        var $p = document.querySelectorAll('p')
+        
+
+        for(var i = 0; i<$p.length; i++){
+            $p[i].innerHTML = formatP($p[i].innerHTML)
+        }
+        
+
+        function formatP(text){
+            var arr = text.split(' ')
+            console.log(arr)
+
+            if(arr.length > 10){
+                return arr.slice(0, 10).join(' ') + '...'
+            }
+            if(arr.length > 10 ){
+                return arr.slice(0, 10).join(' ') + '...'
+            }
+            return text;
+        }
+    </script>
+</body>
+</html>
