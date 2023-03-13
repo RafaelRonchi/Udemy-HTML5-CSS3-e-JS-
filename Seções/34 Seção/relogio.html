@@ -46,7 +46,21 @@
             var hora = data.getHours();
             var minuto = data.getMinutes();
             var segundo = data.getSeconds();
+
+            if(hora < 10){
+                hora = "0"+hora
+                debugger
+            }
+            if(minuto < 10){
+                minuto = "0"+minuto
+                debugger
+            }
+            if(segundo < 10){
+                segundo = "0"+segundo
+                debugger
+            }
             var str = hora + ':' + minuto + ':' + segundo;
+
             relogio.textContent = str;
         }
 
