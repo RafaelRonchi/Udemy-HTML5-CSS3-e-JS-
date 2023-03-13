@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+        
+        <style>
+            h1{
+                font-size: 30px;
+            }
+            input{
+                font-size: 30px;
+                width: 200px;
+                text-align: center;
+                margin-bottom: 10px;
+                cursor: pointer;
+                
+            }
+            button{
+                font-size: 30px;
+                width: 200px;
+                margin-top: 10px;
+                border-radius: 10px;
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+
+            }
+            .cronometrodiv{
+                width: 400px;
+                margin: 0 auto;
+                text-align: center;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="cronometrodiv">
+            <h1>Cronometro</h1>
+            
+            <input type="text" id="cronometro" disabled>
+            <button id="iniciar">Iniciar</button>
+            <button id="pausar">Pausar</button>
+            <button id="parar">Parar</button>
+        </div>
+        <script>
+            
+            (function(){
+                
+                var $cronometro = document.querySelector('#cronometro');
+                var $iniciar = document.querySelector('#iniciar');
+                var $pausar = document.querySelector('#pausar');
+                var $parar = document.querySelector('#parar');
+                
+                var intervalo = null;
+                var TSClickIniciar = 0;
+                var TSClickPausar = 0;
+                var rodando = false;
+                var msTempoDecorrido = 0;
+
+                $iniciar.addEventListener('click', iniciar)         
+                $pausar.addEventListener('click', pausar)      
+                $parar.addEventListener('click', parar)
+                
+                function iniciarCronometro(tempoDecorrido){
+                    var _ms = tempoDecorrido || 0
+                    intervalo = setInterval(function(){
+                        var TSAgora = Date.now()
+                        var diferenca = TSAgora - TSClickIniciar
+                        $cronometro.value = formataMs(diferenca + _ms)
+                    }, 100)
+                }
+                const MINUTO = 60 * 1000
+
+                function formataMs(ms){
+                    if (ms < 1000){
+                        return ms;
+                    } else if (ms < MINUTO){
+                        var s = ms/1000
+                        s = parseInt(s)
+                        var c = ms - ( s * 1000)
+                        return s + ':' + c;
+                    } else{
+                        var m = ms / MINUTO 
+                        m = parseInt(m)
+
+                        return m + ':' + formataMs(ms - m * MINUTO)
+                        /* var s = ms / 1000 - ( m * 60)
+                        s = parseInt(s)
+                        var c = ms - ( s * 1000 ) - ( m * MINUTO)
+                        return m + ':' + s + ':' + c; */
+                    }
+                }
+
+                function iniciar(){
+                    if(rodando) return;
+                    parar();
+                    TSClickIniciar = Date.now()
+                    iniciarCronometro()
+                    rodando = true
+                }
+                function pausar(){
+                    if(!$cronometro.value) return;
+                    if(rodando){
+                        clearInterval(intervalo)
+                        TSClickPausar = Date.now()
+                        msTempoDecorrido += (TSClickPausar - TSClickIniciar)
+                    } else{
+                        TSClickIniciar = Date.now()
+                        iniciarCronometro(msTempoDecorrido)
+                    }
+                    rodando =! rodando
+                }
+                function parar(){
+                    TSClickIniciar = 0
+                    TSClickPausar = 0
+                    msTempoDecorrido = 0
+                    rodando = false
+                    clearInterval(intervalo)
+                    $cronometro.value = ''
+                }
+                
+            })()
+            
+        </script>
+    </body>
+</html>
