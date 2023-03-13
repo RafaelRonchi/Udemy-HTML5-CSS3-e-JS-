@@ -1,0 +1,90 @@
+<!doctype html >
+<html>
+    <head>
+        <title>Javascript Completo</title>
+        <meta charset="utf-8">
+        
+        <style>
+            .container{
+                margin: 0 auto;
+                padding: 20px;
+                width: 1000px;
+            }
+            .banner{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0 0 0 1000px rgba(0,0,0,.8);
+                display: none;
+                padding: 20px;
+                background: #ca0b0b;
+                width: 500px;
+                border-radius: 10px;
+            }
+            .banner h2{
+                font-size: 30px;
+                color: #fff;
+            }
+            
+            .banner__close{
+                position: absolute;
+                top: 7px;
+                right: 5px;
+                border-radius: 2px;
+                border: 0;
+                background: #000;
+                color: #fff;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Javascript Completo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+        </div>
+        
+        <div class="banner">
+            <h2>Banner Irritante</h2>
+            <button class="banner__close">X</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi debitis autem, consectetur, explicabo quisquam voluptatibus nobis quaerat repellat nam, ad vel similique doloremque, doloribus labore quasi provident. Excepturi, odit, velit.</p>
+        
+        </div>
+
+        <script>
+            (function(){
+                var $banner = document.querySelector('.banner');
+                var $bannerBtn = document.querySelector('.banner__close');
+                var intervaloEsconde = null
+
+                $bannerBtn.addEventListener('click', escondeBanner)
+
+                function mostraBanner(){
+                    $banner.style.display = 'block';
+                    
+                    intervaloEsconde = setTimeout(escondeBanner, 10000)
+                }
+                function escondeBanner(){
+                    $bannerBtn.removeEventListener('click', escondeBanner)
+                    $banner.parentNode.removeChild($banner)
+
+                    clearTimeout(intervaloEsconde)
+                }
+
+                setTimeout(mostraBanner, 4000)
+                
+            })()
+        </script>
+        
+        
+    </body>
+</html>
