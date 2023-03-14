@@ -2,6 +2,9 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+img{
+    max-width: 100%;
+}
 
 /* Header */
 
@@ -52,3 +55,45 @@ body{
     transition: all .5s;
 }
 .header__btnMenu{}
+
+/* Class hero */
+.hero{
+    height: 86vh;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(../img/01.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero__title{
+    background-color: #63c6ae;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 30px;
+}
+.hero__text{
+    background-color: #242c2c;
+    margin: 5px 20px 35px;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+}
+.hero__btn{
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
