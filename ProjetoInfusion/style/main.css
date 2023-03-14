@@ -33,7 +33,6 @@ body{
 .header__nav li{
     list-style-type: none;
     background: #242c2c;
-    padding: 25px 0;
     text-align: center;
     border-bottom: 1px dotted rgba(255, 255, 255, 255);
     
@@ -44,6 +43,12 @@ body{
     font-weight: 600;
     text-decoration: none;
     color: white;
-
+    transition: all .5s;
+    display: block;
+    padding: 25px 0;
+}
+.header__nav a:hover {
+    color: #63c6ae;
+    transition: all .5s;
 }
 .header__btnMenu{}
