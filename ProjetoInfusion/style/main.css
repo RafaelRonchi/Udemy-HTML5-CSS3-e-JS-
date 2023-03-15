@@ -83,7 +83,23 @@ img{
     color: #63c6ae;
     transition: all .5s;
 }
-.header__btnMenu{}
+.header__btnMenu{
+    float: right;
+    margin: 1.5em;
+    background:transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.js .header{
+    position: fixed;
+    width: 100%;
+}
+.js .header-nav{
+    transition: max-height 1s;
+}
 
 /* Class hero */
 .hero{
@@ -132,9 +148,7 @@ img{
 .people-cards{
     margin-top: 2.5em;
 }
-.people-cards__card{
-    
-}
+/* .people-cards__card{} */
 .people-cards__card:hover{
     outline: 5px solid #63c6ae;
     outline-offset: -5px;
@@ -269,7 +283,7 @@ img{
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
     .header{
         position: fixed;
     }
