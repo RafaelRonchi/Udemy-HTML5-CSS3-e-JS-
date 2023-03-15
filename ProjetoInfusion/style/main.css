@@ -72,7 +72,7 @@ img{
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     transition: all .5s;
     display: block;
     padding: 25px 0;
@@ -264,3 +264,36 @@ img{
     text-decoration: none;
 }
 
+@media screen and (min-width: 1024px){
+    .header{
+        position: fixed;
+    }
+
+    .logo-text{
+        width: 25%;
+        box-sizing: border-box;
+    }
+    .header__btnMenu{
+        display: none;
+    }
+    .header__nav{
+        float: left;
+        width: 74%;
+        clear: none;
+        max-width: 1300px;
+    }
+    .header__nav ul{
+        display: flex; 
+        justify-content: space-around;
+    }
+    .header__nav li{
+        border-bottom: none;
+        flex-grow: 1;
+    }
+    .header__nav li a{
+        color: #242a2c;
+        background: white;
+    }
+    
+    
+}
