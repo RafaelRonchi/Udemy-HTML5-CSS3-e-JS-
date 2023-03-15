@@ -51,6 +51,7 @@ img{
     text-decoration: none;
     font-weight: bold;
     color: #fff;
+    text-align: right;
     
 }
 .header__nav{
@@ -264,6 +265,9 @@ img{
     font-weight: 600;
     text-decoration: none;
 }
+.footer__logo{
+    text-transform: uppercase;
+}
 
 @media screen and (min-width: 1024px){
     .header{
@@ -281,7 +285,7 @@ img{
         float: left;
         width: 74%;
         clear: none;
-        max-width: 1300px;
+        max-width: 900px;
     }
     .header__nav ul{
         display: flex; 
@@ -300,5 +304,22 @@ img{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
+    }
+
+    .content .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .last-articles__thumbs{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer .container{
+        display: flex;
+    }
+    .footer .container > * {
+        margin: 2em;
     }
 }
