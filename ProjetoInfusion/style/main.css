@@ -211,3 +211,18 @@ img{
     width: 100%;
 }
 
+/*laptop slides*/
+
+.laptop-slider{
+    background-color: #242a2c;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
+.slideshow{
+    white-space: nowrap;
+}
+.slideshow figure{
+    display: inline-block;
+}
+
