@@ -11,6 +11,7 @@ img{
     margin-left: auto;
     padding-left: 1em;
     padding-right: 1em;
+    max-width: 980px;
 }
 .button{
     padding: 15px 40px;
@@ -295,5 +296,9 @@ img{
         background: white;
     }
     
-    
+    .people-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
 }
