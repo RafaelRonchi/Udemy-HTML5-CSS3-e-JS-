@@ -17,4 +17,11 @@
         btnNext: '.next'
     })
 
+    var carouselQuots = new Carousels({
+        container: '.quote-slideshow',
+        itens: 'figure',
+        btnPrev: '.prev',
+        btnNext: '.next'
+    })
+
 })()
